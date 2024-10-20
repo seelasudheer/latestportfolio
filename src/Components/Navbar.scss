@@ -1,0 +1,41 @@
+@import "../index";
+
+.blockBar {
+  ul {
+    margin: 0px;
+  }
+  position: sticky;
+  top: 0%;
+  background-color: #753388;
+  width: 100%;
+  height: 9vh;
+  z-index: 99;
+  .headList {
+    color: $secondaryColor;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: $firstFamily;
+    display: flex;
+    justify-content: center;
+    // display: table;
+  }
+  .headList > li {
+    // float: left;
+    margin-right: 20px;
+    padding: 10px;
+    cursor: pointer;
+    // display: table-cell;
+    // text-align: center;
+  }
+  ul > li:first-child {
+    text-align: left;
+  }
+
+  ul > li:last-child {
+    text-align: right;
+  }
+  .headList > li > a {
+    text-decoration: none;
+    color: inherit;
+  }
+}

@@ -1,0 +1,27 @@
+.download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .align_resume {
+
+        height: 200px;
+        width: 260px;
+
+        a {
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 20px;
+            color: rgb(226, 43, 43);
+            font-size: 20px;
+            background-color: rgb(243, 255, 16);
+        }
+
+        a:hover {
+            box-shadow: #e59115 2px 2px 4px 1px;
+            // transform: translate(2px, 2px);
+        }
+
+    }
+}

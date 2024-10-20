@@ -1,0 +1,150 @@
+@import "./_index.scss";
+
+.main {
+  ul {
+    margin: 0px;
+  }
+
+  .home {
+    background-color: #ffc9cd;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bioInfo {
+      position: relative;
+      height: 60%;
+      width: 50%;
+      background-color: rgb(240, 222, 222);
+      border-radius: 70px;
+
+      .headers {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        width: 300px;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .fullName {
+        font-size: 30px;
+      }
+
+      .skills {
+        // font-size: 20px;
+        // color: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+        background: linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(9, 9, 121, 1) 45%,
+            rgba(0, 212, 255, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .linkedin2 {
+        height: 20px;
+        width: 20px;
+        border-radius: 5px;
+      }
+    }
+
+    .cliPath {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: #b97f34;
+      clip-path: polygon(0 0, 100% 0, 100% 36%, 51% 21%, 0% 38%);
+    }
+
+    // .profileImage{
+
+    // }
+    .image {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 105px;
+      width: 105px;
+      border-radius: 50%;
+    }
+  }
+
+  .skill {
+    // background-color: rgb(100, 228, 74);
+    height: auto;
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+      text-align: center;
+
+      .skillset {
+        color: white;
+        list-style: none;
+
+        li {
+          font-size: 30px;
+          padding: 5px;
+        }
+
+        // margin-left: 30px;
+        .skilllogos {
+          height: 20px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .resume {
+    background-color: rgb(221, 207, 126);
+    margin: 0px;
+  }
+
+  .phtography {
+    background-color: black;
+    height: 100vh;
+
+    .galleryHeader {
+      margin: 0px;
+      color: white;
+      font-size: 30px;
+      padding: 35px;
+    }
+
+    .wrapy {
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: space-between;
+      // width: 500px;
+    }
+
+    .flowImg {
+      height: 35px;
+      width: 45px;
+      padding: 10px;
+    }
+
+    .viewImg {
+      display: block;
+      padding: 10px;
+      height: 100%;
+      width: 100%;
+    }
+
+    .centerItem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .clickMore {
+      padding: 30px;
+      text-align: center;
+    }
+  }
+}

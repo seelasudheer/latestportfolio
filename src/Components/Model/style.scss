@@ -1,0 +1,99 @@
+.model {
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .model-content {
+    width: 50rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: lightgray;
+    border-radius: 3px;
+  }
+
+  .model-header,
+  .model-footer {
+    padding: 10px;
+  }
+
+  .model-header {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  .model-title {
+    margin: 0px;
+    font-family: fantasy;
+  }
+
+  .model-body {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+
+    .viewImg {
+      width: 780px;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+
+  .model-footer {
+    .rollGallery {
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
+
+    .rollGallery::-webkit-scrollbar {
+      width: 2px;
+      /* width of the entire scrollbar */
+      height: 10px;
+    }
+
+    .rollGallery::-webkit-scrollbar-track {
+      background: rgb(230, 84, 48);
+      /* color of the tracking area */
+      border: 4px solid transparent;
+      border-radius: 5px;
+      /* roundness of the scroll thumb */
+    }
+
+    .rollGallery::-webkit-scrollbar-thumb {
+      background-color: rgb(0, 0, 0);
+      /* color of the scroll thumb */
+      border-radius: 5px;
+      /* roundness of the scroll thumb */
+      width: 5px !important;
+      border: 1px solid rgb(255, 255, 255);
+    }
+
+    .flowImg {
+      height: 35px;
+      width: 45px;
+      padding: 5px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .model-content {
+    width: 35rem !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .model-content {
+    width: 20rem !important;
+  }
+}
